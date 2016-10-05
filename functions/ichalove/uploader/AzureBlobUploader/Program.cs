@@ -12,6 +12,7 @@ namespace AzureBlobUploader
 {
     class Program
     {
+        private static string STORAGE_END_POINT = "{Put your Storage Endpoint in here}";
         static int Main(string[] args)
         {
             if (args.Length == 0)
@@ -20,7 +21,7 @@ namespace AzureBlobUploader
                 return 1;
             }
             {
-                var storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=pooryou;AccountKey=qLUkcGy//+Fg/B4tgXEevDKnJjEcDsA8sn4vEGD46o6skvfsvpzdCcWt8L1Jk3oNxA05uqvQmGTcCVaF7iQ3ww==");
+                var storageAccount = CloudStorageAccount.Parse(STORAGE_END_POINT);
                 var blobClient = storageAccount.CreateCloudBlobClient();
                 var container = blobClient.GetContainerReference("pictures");
                 if (System.IO.File.Exists(args[0]))
