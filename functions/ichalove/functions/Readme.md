@@ -12,3 +12,10 @@ private static string FACE_API_SUBSCRIPTION_KEY = "{Put your face api subscripti
 private static string CONNECTION_STRING = "{put your SQL Server DB connection String here}";
 ```
 
+You can refer sample source is integrated with uploader / ichalove dir's source.
+ichalove source is originaly develped by Mr.Fujimoto's repos. See - [Interactive Ichaicha](https://github.com/fujikosu/interactiveIchaicha).
+
+I just added his project to an uploading feature of the picture.
+
+
+
